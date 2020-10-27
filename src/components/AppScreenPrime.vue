@@ -9,8 +9,9 @@ import AppTitle from "@/components/AppTitle";
 
 export default {
 name: "AppScreenPrime",
-  components:
+  components: {
     AppTitle
+  }
 }
 </script>
 

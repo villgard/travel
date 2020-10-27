@@ -1,17 +1,17 @@
 <template>
-<div :class=" ['title', `title__${state}` ]">
-  <slot />
-</div>
+  <div :class=" ['title', `title__${state}` ]">
+    <slot />
+  </div>
 </template>
 
 <script>
 export default {
 name: "AppTitle",
   props: {
-  state: {
-    type: String,
-    default: 'prime'
-  }
+    state: {
+      type: String,
+      default: 'prime'
+    }
   }
 }
 
