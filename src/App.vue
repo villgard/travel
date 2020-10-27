@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppHeader/>
+    <AppScreenPrime/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from "@/components/AppHeader";
+import AppScreenPrime from "@/components/AppScreenPrime";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppHeader,
+    AppScreenPrime
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "./assets/styles/main";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Mulish:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 auto;
+  max-width: 1220px;
 }
 </style>
